@@ -20,6 +20,7 @@ def inline_query(bot, update):
          ],
          cache_time=0
      )
+     bot.sendMessage(chat_id='242879274', text='{} {}'.format(update.inline_query.from_user.username, query))
 
 
 u = Updater(os.environ['TELEGRAM_TOKEN'])
